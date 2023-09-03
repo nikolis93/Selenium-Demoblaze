@@ -18,14 +18,12 @@ import org.openqa.selenium.support.ui.Wait;
  */
 public class Actions {
 
-    public static void LogOut(WebDriver driver, String url) {
-        driver.get(url);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    public static void LogOut(WebDriver driver, String url) {        
         String html = driver.getPageSource();
-
-        WebElement logout = driver.findElement(By.id("logout2"));
-        System.out.println("logouttext: " + logout.getTagName());
         try {
+            WebElement logout = driver.findElement(By.id("logout2"));
+            System.out.println("logouttext: " + logout.getTagName());
+
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
             logout.click();
             System.out.println("logout is displayed");
