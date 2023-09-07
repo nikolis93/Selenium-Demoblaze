@@ -15,8 +15,9 @@ public class Demoblaze {
         WebDriver driver = new FirefoxDriver();
 
         //Actions.SignUp(driver, "https://www.demoblaze.com/");
-        Actions.LoginIn(driver, "https://www.demoblaze.com/");
-       // Actions.LogOut(driver, "https://www.demoblaze.com/"); 
+        driver = Actions.LoginIn(driver, "https://www.demoblaze.com/");
+        Actions.ProductsList(driver, "https://www.demoblaze.com/");
+        //Actions.LogOut(driver, "https://www.demoblaze.com/"); 
     }
 
 }
