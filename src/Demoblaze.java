@@ -16,7 +16,7 @@ public class Demoblaze {
 
         //Actions.SignUp(driver, "https://www.demoblaze.com/");
         Actions.LoginIn(driver, "https://www.demoblaze.com/");
-       // Actions.LogOut(driver, "https://www.demoblaze.com/"); //not working need to check it again
+       // Actions.LogOut(driver, "https://www.demoblaze.com/"); 
     }
 
 }
